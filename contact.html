@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact | Data Directa</title>
+<meta name="description" content="Tell us what kind of data you need and we'll match you with the right dataset.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Instrument+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-contact">
+
+<header class="site-header">
+  <a class="logo" href="index.html" aria-label="Data Directa home"><img src="images/logo.jpg" alt="Data Directa"></a>
+  <nav>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#about">About</a>
+    <a href="contact.html">Contact</a>
+    <a class="login" href="#">Login</a>
+  </nav>
+</header>
+
+<main class="contact">
+  <div class="arrow" aria-hidden="true">
+    <svg viewBox="0 0 210 120" fill="none" stroke="#000" stroke-width="4"><path d="M0 60H205M150 5C150 38 175 55 205 60C175 65 150 82 150 115"/></svg>
+  </div>
+  <div>
+    <h1>Tell us what kind of <br class="m"><span class="sw p">data you need.</span></h1>
+    <!-- Replace YOUR_FORM_ID with your Formspree form ID. Submissions go to your inbox; your email never appears on the page. -->
+    <form action="https://formspree.io/f/moeenlpe" method="POST">
+      <div><label for="name">Name</label><input id="name" name="name" required></div>
+      <div><label for="email">Work email</label><input id="email" name="email" type="email" required></div>
+      <div><label for="company">Company</label><input id="company" name="company"></div>
+      <div><label for="request">What kind of data are you looking for?</label><textarea id="request" name="request" required></textarea></div>
+      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit">Submit Request</button>
+      <p class="note">We’ll reply within 1–2 business days.</p>
+    </form>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <a class="f-logo" href="index.html">Data Directa</a>
+  <ul class="f-nav">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <p class="f-desc">Data Directa provides clean, reliable datasets to agencies and firms through simple subscriptions. We handle the sourcing, cleaning and updating, so your team can focus on decisions instead of data prep.</p>
+  <p class="f-copy">© 2026 Data Directa. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
